@@ -1,6 +1,4 @@
 from django.db import models
-from .models import Postpyt
-
 
 # Create your models here.
 
