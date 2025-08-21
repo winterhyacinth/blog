@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Hello world</h1>
-    {% for post in posts %}
-        {{ post.title }}
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for post in posts %}
+        <a href = "{% url 'detail' post.pk %}">{{ post.title }} </a>
         {{ post.date }}
     {% endfor %}
-    <script src="index.js"></script>
-  </body>
-</html>
+
+{% endblock %}
