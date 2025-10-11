@@ -12,17 +12,23 @@
 
 <link rel="icon" type="image/png" href="/media/post_images/cookie.png">
   </head>
-  <body>
+  <body style="display: flex; flex-direction: column; "flex: 1; min-height: 100vh; margin: 0;">
       <header class ="site-header">
         <div class="title-container">
 <img src="/media/post_images/cookie.png" alt="Cookie" class = "logo">
-        <h1 style="color:#d37c60; text-align: center; ">velvet bakery</h1>
+        <h1 class = "h1" style="color:#d37c60; text-align: center; ">velvet bakery</h1>
         </div>
     </header>
-      <hr>
+<hr style="border: none; height: 10px; background-color: hwb(0 14% 74% / 1); opacity: 1;" />
       <div class = "container">
     {% block content %}
     {% endblock %}
 </div>
+<hr style="border: none; height: 10px;">
+
+<footer style="background-color: hwb(0 14% 74% / 1); color: #d37c60; text-align: center; padding: 1rem;">
+  recipe site made by winterhyacinth
+</footer>
+
   </body>
 </html>

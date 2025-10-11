@@ -20,6 +20,7 @@
 
  .h1{
   font-family: "Comic";
+  font-size: 70px;
  }
 
 .title-container {
@@ -31,6 +32,12 @@
 .logo {
   height: 125px; /* matches the font size of the title */
 }
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
 
 body {
  background-color:#ddbfb5;
