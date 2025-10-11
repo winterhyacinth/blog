@@ -38,6 +38,40 @@
   transition: transform 0.2s ease-in-out;
 }
 
+.lace-side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #4b2e2e; 
+  
+
+  z-index: -1;
+}
+
+.lace-side.left {
+  -webkit-mask-image: url('brownlace.png');
+  -webkit-mask-repeat: repeat-y;
+  -webkit-mask-size: contain;
+
+  mask-image: url('brownlace.png');
+  mask-repeat: repeat-y;
+  mask-size: contain;
+  left: -6px;
+}
+
+.lace-side.right {
+  -webkit-mask-image: url('brownlaceright.png');
+  -webkit-mask-repeat: repeat-y;
+  -webkit-mask-size: contain;
+
+  mask-image: url('brownlaceright.png');
+  mask-repeat: repeat-y;
+  mask-size: contain;
+  right: -6px;
+}
+
+
 
 body {
  background-color:#ddbfb5;
