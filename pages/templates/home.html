@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-{% for post in posts %}
-    <div class="card" style="width: 18rem; border: 6px solid #422323; border-radius: 12px;">
-       {% if post.image %}
-      <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
-    {% endif %}
-  <div class="card-body">
-    <h5 class="card-title">{{ post.title }}</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.date }}</h6>
-    <a href="{% url 'detail' post.pk %}" class="card-link">read post</a>
-  </div>
-</div>
+  <div class="card-grid">
+    {% for post in posts %}
+      <div class="card" style="width: 18rem; border: 6px solid #422323; border-radius: 12px;">
+        {% if post.image %}
+          <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.date }}</h6>
+          <a href="{% url 'detail' post.pk %}" class="card-link">read post</a>
+        </div>
+      </div>
     {% endfor %}
-
+  </div>
 {% endblock %}
