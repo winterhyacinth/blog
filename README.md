@@ -1,9 +1,4 @@
-# Velvet Bakery  
-<p align="center">
- /) /)<br>
- (•.•)<br>
- (  づ🍪<br>
-</p>
+# Velvet Bakery ₊˚⊹♡ 
 
 ## why i made it
 * i made this to explore backend development! i've mainly focused on the visuals of sites, so it was nice to make something non-static
