@@ -9,5 +9,5 @@ class Recipe(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=100)
     date = models.DateField()
-    content = models.TextField()
+    content = RichTextField()
     image = models.ImageField(upload_to='post_images/', blank=True, null=True)
