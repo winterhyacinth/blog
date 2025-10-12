@@ -1,7 +1,9 @@
 # Velvet Bakery  
- /) /)
- (•.•)
- (  づ🍪
+<p align="center">
+ /) /)<br>
+ (•.•)<br>
+ (  づ🍪<br>
+</p>
 
 ## why i made it
 * i made this to explore backend development! i've mainly focused on the visuals of sites, so it was nice to make something non-static
