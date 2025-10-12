@@ -15,6 +15,8 @@
 
 * the cookie pixel art was created on pixquare
 
+*i spent 8 hours on coding it :') as well as around 2hr setting up pythonanywhere, making the icon, and adding recipes in 
+
 ## struggles & learning
 * i've never really done any backend before, and django was overall very confusing!! (i'm proud i made a non-static site, though!)
 
