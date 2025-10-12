@@ -9,7 +9,7 @@
         {% endif %}
         <div class="card-body">
           <h5 class="card-title">{{ post.title }}</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.date }}</h6>
+          <h6 class="card-subtitle">{{ post.date }}</h6>
           <a href="{% url 'detail' post.pk %}" class="card-link">read post</a>
         </div>
       </div>

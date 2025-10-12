@@ -33,6 +33,14 @@
   height: 125px; /* matches the font size of the title */
 }
 
+
+.card {
+  background-color: white;
+  color: #4b2e2e;
+  transform: scale(1);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -47,11 +55,26 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+.card-link {
+  color: #d37c60;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 
 .card:hover {
+  
+  background-color: hwb(0 14% 74%);  
+  color: #f8c8dc; /* soft pink text */
   transform: scale(1.02);
-  transition: transform 0.2s ease-in-out;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: color 0.5s ease;
+
+}
+.card:hover .card-subtitle {
+  color: #f8c8dc;
+  transition: color 0.5s ease;
 }
 
 .lace-side {
