@@ -2,8 +2,7 @@ from django.db import models
 from ckeditor.fields import RichTextField
 
 class Recipe(models.Model):
-    instructions = RichTextField()
-
+    instructions = RichTextField(blank=True)
 
 # Create your models here.
 
