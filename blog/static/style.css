@@ -53,6 +53,7 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+
 .card-link {
   color: #d37c60;
   text-decoration: underline;
@@ -60,13 +61,12 @@
 }
 
 .card:hover {
-  
   background-color: hwb(0 14% 74%);  
   color: #f8c8dc; /* soft pink text */
   transform: scale(1.02);
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, color 0.5s ease;
-
 }
+
 .card:hover .card-subtitle {
   color: #f8c8dc;
   transition: color 0.5s ease;
@@ -78,7 +78,6 @@
   bottom: 0;
   width: 60px;
   background-color: #4b2e2e;  
-
   z-index: -1;
 }
 
@@ -86,7 +85,6 @@
   -webkit-mask-image: url('brownlace.png');
   -webkit-mask-repeat: repeat-y;
   -webkit-mask-size: contain;
-
   mask-image: url('brownlace.png');
   mask-repeat: repeat-y;
   mask-size: contain;
@@ -97,12 +95,12 @@
   -webkit-mask-image: url('brownlaceright.png');
   -webkit-mask-repeat: repeat-y;
   -webkit-mask-size: contain;
-
   mask-image: url('brownlaceright.png');
   mask-repeat: repeat-y;
   mask-size: contain;
   right: -6px;
 }
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.8s ease forwards;
